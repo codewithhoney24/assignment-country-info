@@ -17,15 +17,15 @@ const CountryPage = ({ params }: CountryPageProps) => {
   }
 
   return (
-    <div className="country-col">
+    <div className ="country-col">
       <h6 className='font-extralight text-xs text-center'>Assignment By Nousheen Atif</h6>
       <h1>{countryData.name}</h1>
       <p>Population: {countryData.population}</p>
       <p>Capital: {countryData.capital}</p>
 
-      <div className="navigation-buttons pb-8">
-        <Link href="/country" className="button">Back to Country List</Link>
-        {/* Add logic for the next/previous country if needed */}
+      <div className ="navigation-buttons pb-8">
+        <Link href="/country" className ="button">Back to Country List</Link>
+      
       </div>
     </div>
   );
