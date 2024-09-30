@@ -1,27 +1,168 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5ede0; /* Light brown background */
+  color: #4b2e19;            /* Dark brown text */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Styling for country list */
+.country-list {
+  background-color: #e4d5c3; /* Light background for contrast */
+  border-radius: 10px;
+  border: 8px solid #a57542;  /* Brown border */
+  width: 80%;                 /* Responsive width */
+  max-width: 600px;          /* Max width for larger screens */
+  margin: 10px auto;         /* Center the list */
+  padding: 10px;             /* Inner padding */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  margin-bottom: 20px;       /* Space below heading */
+  font-size: 3rem;           /* Large heading size */
+  font-weight: bold;         /* Bold weight */
+  text-align: center;        /* Centered text */
+}
+
+p {
+  font-weight: 900;          /* Strong emphasis */
+  font-size: 1.5rem;        /* Medium size */
+}
+
+/* List styles */
+.country-list ul {
+  font-size: 1.5rem;         /* List item font size */
+  list-style-type: none;     /* Remove bullets */
+  padding: 0;                /* Reset padding */
+}
+
+.country-list li {
+  margin: 10px 0;           /* Spacing between items */
+  text-align: center;       /* Center the country names */
+}
+
+.country-list a {
+
+    
+  color: #4b2e19;            /* Dark brown link */
+  font-weight: bold;         /* Bold links */
+  transition: color 0.3s;    /* Smooth transition for hover effect */
+  
+  padding: 10px;             /* Padding for better click area */
+}
+
+.country-list a:hover {
+  color: #8b5e34;            /* Lighter brown on hover */
+}
+
+/* Country container styles */
+.country-container {
+  
+  background-color: #e4d5c3; /* Light brown background */
+  padding: 20px;             /* Inner padding */
+  border-radius: 20px;       /* Rounded corners */
+  border: 8px solid #a57542;  /* Brown border */
+  width: 90%;                /* Responsive width */
+  max-width: 600px;          /* Max width */    
+  text-align: center;        /* Centered text */
+  font-size: 1.3rem;         /* Font size */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.country-col {
+  margin-top: 10%;
+  margin-left: 25%;
+  background-color: #e4d5c3; /* Light brown background */
+  padding: 20px;             /* Inner padding */
+  border-radius: 20px;       /* Rounded corners */
+  border: 8px solid #a57542;  /* Brown border */
+  width: 90%;                /* Responsive width */
+  max-width: 600px;          /* Max width */
+  text-align: center;        /* Centered text */
+  font-size: 1.3rem;         /* Font size */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Population and Capital styles */
+.country-details {
+  border: 8px dashed #a57542; /* Dashed border for details */
+  border-radius: 10px;        /* Rounded corners */
+  padding: 15px;              /* Inner padding */
+  margin: 20px 0;            /* Margin for spacing */
+  text-align: center;         /* Centered text */
+}
+
+/* Navigation buttons */
+.navigation-buttons {
+  margin-top: 20px;          /* Space above buttons */
+}
+
+.button {
+  background-color: #4b2e19; /* Dark brown */
+  color: white;              /* White text */
+  padding: 10px 15px;        /* Padding for buttons */
+  border: none;              /* Remove border */
+  border-radius: 5px;        /* Rounded corners */
+  text-decoration: none;      /* Remove underline */
+  cursor: pointer;           /* Pointer cursor on hover */
+  margin: 5px;               /* Space between buttons */
+  display: inline-block;      /* Allow spacing */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+  background-color: #8b5e34; /* Lighter brown on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;       /* Smaller heading for small screens */
+  }
+
+  .country-list ul {
+    font-size: 1.2rem;       /* Smaller font for list on small screens */
+  }
+
+  .country-container {
+    padding: 15px;           /* Reduced padding for small screens */
+  }
+
+  .button {
+    width: 100%;             /* Full width buttons on small screens */
+    text-align: center;      /* Center text in buttons */
+  }
+}
+@media (max-width: 1200px) {
+  .country-col {
+    margin-left: 20%;         /* Adjust margin for medium screens */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 992px) {
+  .country-col {
+    margin-left: 15%;         /* Adjust margin for smaller screens */
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (max-width: 768px) {
+  .country-col {
+    margin-left: 10%;         /* Adjust margin for tablets */
+    width: 85%;               /* Adjust width for tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .country-col {
+    margin-left: 5%;          /* Adjust margin for mobile screens */
+    width: 100%;              /* Full width for mobile */
+    padding: 15px;            /* Reduce padding for mobile */
   }
 }
