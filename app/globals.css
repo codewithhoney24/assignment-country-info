@@ -1,168 +1,165 @@
-/* globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Global Styles */
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5ede0; /* Light brown background */
-  color: #4b2e19;            /* Dark brown text */
+  background-color: #f5ede0; 
+  color: #4b2e19;           
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Styling for country list */
+
 .country-list {
-  background-color: #e4d5c3; /* Light background for contrast */
+  background-color: #e4d5c3;
   border-radius: 10px;
-  border: 8px solid #a57542;  /* Brown border */
-  width: 80%;                 /* Responsive width */
-  max-width: 600px;          /* Max width for larger screens */
-  margin: 10px auto;         /* Center the list */
-  padding: 10px;             /* Inner padding */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 8px solid #a57542;  
+  width: 80%;                 
+  max-width: 600px;         
+  margin: 10px auto;         
+  padding: 10px;             
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 
 h1 {
-  margin-bottom: 20px;       /* Space below heading */
-  font-size: 3rem;           /* Large heading size */
-  font-weight: bold;         /* Bold weight */
-  text-align: center;        /* Centered text */
+  margin-bottom: 20px;     
+  font-size: 3rem;           
+  font-weight: bold;         
+  text-align: center;       
 }
 
 p {
-  font-weight: 900;          /* Strong emphasis */
-  font-size: 1.5rem;        /* Medium size */
+  font-weight: 900;          
+  font-size: 1.5rem;      
 }
 
-/* List styles */
+
 .country-list ul {
-  font-size: 1.5rem;         /* List item font size */
-  list-style-type: none;     /* Remove bullets */
-  padding: 0;                /* Reset padding */
+  font-size: 1.5rem;         
+  list-style-type: none;       
+  padding: 0;             
 }
 
 .country-list li {
-  margin: 10px 0;           /* Spacing between items */
-  text-align: center;       /* Center the country names */
+  margin: 10px 0;           
+  text-align: center;      
 }
 
 .country-list a {
 
     
-  color: #4b2e19;            /* Dark brown link */
-  font-weight: bold;         /* Bold links */
-  transition: color 0.3s;    /* Smooth transition for hover effect */
+  color: #4b2e19;            
+  font-weight: bold;         
+  transition: color 0.3s;    
   
-  padding: 10px;             /* Padding for better click area */
+  padding: 10px;             
 }
 
 .country-list a:hover {
-  color: #8b5e34;            /* Lighter brown on hover */
+  color: #8b5e34;        
 }
 
-/* Country container styles */
 .country-container {
   
-  background-color: #e4d5c3; /* Light brown background */
-  padding: 20px;             /* Inner padding */
-  border-radius: 20px;       /* Rounded corners */
-  border: 8px solid #a57542;  /* Brown border */
-  width: 90%;                /* Responsive width */
-  max-width: 600px;          /* Max width */    
-  text-align: center;        /* Centered text */
-  font-size: 1.3rem;         /* Font size */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #e4d5c3; 
+  padding: 20px;             
+  border-radius: 20px;       
+  border: 8px solid #a57542;  
+  width: 90%;              
+  max-width: 600px;       
+  text-align: center;        
+  font-size: 1.3rem;         
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 .country-col {
   margin-top: 10%;
   margin-left: 25%;
-  background-color: #e4d5c3; /* Light brown background */
-  padding: 20px;             /* Inner padding */
-  border-radius: 20px;       /* Rounded corners */
-  border: 8px solid #a57542;  /* Brown border */
-  width: 90%;                /* Responsive width */
-  max-width: 600px;          /* Max width */
-  text-align: center;        /* Centered text */
-  font-size: 1.3rem;         /* Font size */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #e4d5c3; 
+  padding: 20px;          
+  border-radius: 20px;       
+  border: 8px solid #a57542;
+  width: 90%;                
+  max-width: 600px;          
+  text-align: center;        
+  font-size: 1.3rem;       
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 
-/* Population and Capital styles */
+
 .country-details {
-  border: 8px dashed #a57542; /* Dashed border for details */
-  border-radius: 10px;        /* Rounded corners */
-  padding: 15px;              /* Inner padding */
-  margin: 20px 0;            /* Margin for spacing */
-  text-align: center;         /* Centered text */
+  border: 8px dashed #a57542;
+  border-radius: 10px;        
+  padding: 15px;             
+  margin: 20px 0;       
+  text-align: center;         
 }
-
-/* Navigation buttons */
 .navigation-buttons {
-  margin-top: 20px;          /* Space above buttons */
+  margin-top: 20px;          
 }
 
 .button {
-  background-color: #4b2e19; /* Dark brown */
-  color: white;              /* White text */
-  padding: 10px 15px;        /* Padding for buttons */
-  border: none;              /* Remove border */
-  border-radius: 5px;        /* Rounded corners */
-  text-decoration: none;      /* Remove underline */
-  cursor: pointer;           /* Pointer cursor on hover */
-  margin: 5px;               /* Space between buttons */
-  display: inline-block;      /* Allow spacing */
-  transition: background-color 0.3s; /* Smooth transition */
+  background-color: #4b2e19; 
+  color: white;              
+  padding: 10px 15px;        
+  border: none;           
+  border-radius: 5px;        
+  text-decoration: none;      
+  cursor: pointer;         
+  margin: 5px;             
+  display: inline-block;      
+  transition: background-color 0.3s; 
 }
 
 .button:hover {
-  background-color: #8b5e34; /* Lighter brown on hover */
+  background-color: #8b5e34;
 }
 
 /* Responsive styles */
 @media (max-width: 600px) {
   h1 {
-    font-size: 2.5rem;       /* Smaller heading for small screens */
+    font-size: 2.5rem;     
   }
 
   .country-list ul {
-    font-size: 1.2rem;       /* Smaller font for list on small screens */
+    font-size: 1.2rem;      
   }
 
   .country-container {
-    padding: 15px;           /* Reduced padding for small screens */
+    padding: 15px;          
   }
 
   .button {
-    width: 100%;             /* Full width buttons on small screens */
-    text-align: center;      /* Center text in buttons */
+    width: 100%;             
+    text-align: center;    
   }
 }
 @media (max-width: 1200px) {
   .country-col {
-    margin-left: 20%;         /* Adjust margin for medium screens */
+    margin-left: 20%;         
   }
 }
 
 @media (max-width: 992px) {
   .country-col {
-    margin-left: 15%;         /* Adjust margin for smaller screens */
+    margin-left: 15%;        
   }
 }
 
 @media (max-width: 768px) {
   .country-col {
-    margin-left: 10%;         /* Adjust margin for tablets */
-    width: 85%;               /* Adjust width for tablets */
+    margin-left: 10%;    
+    width: 85%;             
   }
 }
 
 @media (max-width: 600px) {
   .country-col {
-    margin-left: 5%;          /* Adjust margin for mobile screens */
-    width: 100%;              /* Full width for mobile */
-    padding: 15px;            /* Reduce padding for mobile */
+    margin-left: 5%;        
+    width: 100%;           
+    padding: 15px;        
   }
 }
